@@ -25,13 +25,14 @@ The **Galactic Cargo Management System** assigns each cargo bin a unique integer
 
 The system is designed for efficient space management, using AVL Trees to maintain a balanced structure for storing bins and objects. This ensures efficient searching, insertion, and deletion operations.
 
-| Operation                  | Time Complexity                   |
-|----------------------------|-----------------------------------|
-| `add_bin`                  | \(O(\log(n))\)                    |
-| `add_object`               | \(O(\log(n) + \log(m))\)          |
-| `delete_object`            | \(O(\log(n) + \log(m))\)          |
-| `object_info`              | \(O(\log(n) + \log(m))\)          |
-| `bin_info`                 | \(O(\log(n) + S)\), where \(S\) is the number of objects in the bin |
+| Operation       | Time Complexity                                     |
+|-----------------|-----------------------------------------------------|
+| `add_bin`       | O(log(n))                                           |
+| `add_object`    | O(log(n) + log(m))                                  |
+| `delete_object` | O(log(n) + log(m))                                  |
+| `object_info`   | O(log(n) + log(m))                                  |
+| `bin_info`      | O(log(n) + S), where S is the number of objects in the bin |
+
 
 ### Classes and Functionalities
 
